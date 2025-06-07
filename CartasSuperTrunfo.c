@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
+// Tema 2 - Super Poderes das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 
@@ -19,6 +19,10 @@ int main() {
     float pib1; // declaração da variável tipo float com nome pib1
     int pontosturisticos1; // declaração da variável tipo int com nome pontosturisticos1
 
+    // novas variáveis para a carta 01
+    float densidadepop1 = populacao1/area1; 
+	float pibcapita1 = pib1/populacao1;
+
     // Declaração das Variáveis para a Carta 2
 
     char estado2[01]; // declaração da variável tipo char com nome estado2
@@ -29,7 +33,10 @@ int main() {
     float pib2; // declaração da variável tipo float com nome pib2
     int pontosturisticos2; // declaração da variável tipo int com nome pontosturisticos2
 
-	
+	// novas variáveis para a carta 02
+    float densidadepop2 = populacao2/area2;
+	float pibcapita2 = pib2/populacao2;
+
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
@@ -106,6 +113,9 @@ int main() {
 
    printf("Pontos Turísticos: %d\n", pontosturisticos1);
 
+    // exibição das novas variáveis para a carta 01 
+    printf("A Densidade Populacional é: %.2f hab/km²\n", densidadepop1);
+    printf("O PIB per Capita é: %.2f reias\n", pibcapita1);
 
     // Exibição dos dados para a Carta 02
 
@@ -124,6 +134,10 @@ int main() {
     printf("PIB da Cidade: R$ %.2f bilhões\n", pib2);
 
     printf("Pontos Turísticos: %d\n", pontosturisticos2);
+
+    // exibição das novas variáveis para a carta 02
+    printf("A Densidade Populacional é: %.2f hab/km²\n", densidadepop2);
+	printf("O PIB per Capita é: %.2f reais\n", pibcapita2);
 
     return 0;
 }
